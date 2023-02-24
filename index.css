@@ -1,4 +1,4 @@
-/*CSS Selector*/
+
 
 /*Type Selector*/
 h1{
@@ -6,23 +6,16 @@ h1{
 	font-size: 2rem;
 }
 
+
+input{
+	border-width: 2px;
+	border-color: solid;
+}
+
 /*Universal Selector*/
 * {
 	font-family: "Courier New", monospace;
 	font-size: 20px;
-}
-
-
-/*Class Selector*/
-.offering-item{
-	text-transform: uppercase;
-}
-
-/*Attribute Selector*/
-input[required] {
-	border-width: 2px;
-	border-style: solid;
-	border-color: beige;
 }
 
 /*General Sibling and Multiple Selector*/
@@ -37,22 +30,25 @@ body > section > form > label {
 	color: beige;
 }
 
-/*Descendant Selector*/
-#bootcamp-learning-list li {
-	color: #075966;
-}
-
 /*Other styling*/
 body {
-	background-color: skyblue;
+	background-color: beige;
 }
 
 html {
 	scroll-behavior: smooth;
 }
 
+
 nav {
+	display: flex;
 	background-color: white;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+
 }
 
 div {
@@ -69,26 +65,69 @@ h2 {
 	font-size: 1.5rem;
 }
 
-ol {
-	list-style-type: none;
+h3 {
+	font-size: 12;
 }
+
 
 form {
 	text-align: center;
-	background-color: white;
-	border: 2px solid black;
-	height: 250px;
-	width: 25vw;
-	position: relative;
-	left: 37.25%;
 }
 
-button {
-	margin-top: 10px;
-	background-color: #cf0053;
-	color: white;
-	border: 0;
-	border-radius: 15px;
-	padding: 10px 5px;
+a {
+	text-align: center;
 }
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 25px;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+h1{
+	text-align: left;
+	display: inline-block;
+	color: skyblue;	
+}
+
+h2{
+	text-align: left;
+	display: inline-block;
+	color: purple;
+	height: 500px;
+	width: 200px;
+}
+
+img{
+	height: auto;
+	width: 400px;
+}
+
+form{
+	text-align: left;
+	height: auto;
+	width: 100px;
+	display: flex;
+	padding: 10px 25px;
+    justify-content: space-between;
+}
+
+
+form + h3{
+	text-indent: !important;
+}
+
+
+
+
+
+
+
 
